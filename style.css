@@ -1,17 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Gravitas+One&family=Lobster&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root {
+
+    --dark-col : #264653;
+    --light-col : #ffffff ;
+    --bg-col :  rgb(55, 131, 105);
+
+
+}
 
 body {
 
-    background-color: rgb(55, 131, 105);
-    margin: 0%;
+    background-color: var(--bg-col);
+    margin: auto;
 }
 
 
 .pii {
 
-    color: rgb(243, 243, 243);
-    text-align: left;
+    color: var(--light-col);
+    text-align: center;
     font-family: 'Courier New', Courier, monospace;
     line-height: 29px;
 }
@@ -27,15 +35,17 @@ header {
 
     padding: 15px 30px;
 
-    background-color: #1a1a1a;
+    background-image: linear-gradient(45deg , var(--light-col) , var(--dark-col));
 
-    color: #ffffff;
+    color:#264653
 
     font-family: "Gravitas One", serif;
 
     font-weight: 400;
 
     font-style: normal;
+
+    margin: 30px;
 
 }
 
@@ -45,5 +55,96 @@ footer {
     color: #ffffff;
     background-color: #1a1a1a;
 
+}
 
+img {
+
+    width: 250px;
+
+    display: flex;
+
+    justify-content: center; 
+
+    align-items: center;
+
+    margin-left: auto;
+
+    margin-right: auto;
+
+      animation: wobble 1s ease-in-out infinite alternate
+}
+
+div {
+
+    border: solid 5px #931a1a;
+    margin: 90px;
+    padding: 10px;
+}
+
+a {
+
+    width: auto ;
+    height: auto ;
+}
+
+.grid {
+
+    display: grid;
+
+    grid-template-areas:
+    " a b "
+    " c d  ";
+
+    gap: 30px;
+
+    background-color: var(--dark-col)
+
+
+}
+
+.first {
+
+ grid-area: a ;
+ background-color: #5295af;
+ color: #931a1a;
+
+}
+
+.second {
+
+     grid-area: b ;
+ background-color:aqua;
+ color:antiquewhite;
+
+}
+
+.third {
+
+     grid-area: c ;
+ background-color:antiquewhite;
+ color:aquamarine;
+}
+
+.fourth {
+
+     grid-area: d  ;
+ background-color:#931a1a;
+ color:bisque;
+
+}
+
+.box {
+
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    border: none;
+}
+
+@keyframes wobble {
+
+    0%{transform:rotate(0deg)}
+
+    100%{transform:rotate(-20deg)}
 }
