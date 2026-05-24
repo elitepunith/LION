@@ -11,7 +11,7 @@ body {
 .pii {
 
     color: rgb(243, 243, 243);
-    text-align: center;
+    text-align: left;
     font-family: 'Courier New', Courier, monospace;
     line-height: 29px;
 }
@@ -36,5 +36,14 @@ header {
     font-weight: 400;
 
     font-style: normal;
+
+}
+
+footer {
+
+    text-align: center;
+    color: #ffffff;
+    background-color: #1a1a1a;
+
 
 }
